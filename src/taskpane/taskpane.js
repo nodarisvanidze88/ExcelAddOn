@@ -12,5 +12,8 @@ export async function insertText(text) {
     });
   } catch (error) {
     console.log("Error: " + error);
+  } finally {
+    // Ensure that the console is cleared after the operation
+    console.clear();
   }
 }
